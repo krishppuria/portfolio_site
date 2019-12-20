@@ -3,13 +3,9 @@
  	<title>
  		Krishna Parasrampuria's Bio
  	</title>
- 	<link rel="stylesheet" type="text/css" href="normalize.css">
- 	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ 	 	<link rel="stylesheet" type="text/css" href="normalize.css">
+ 	  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
  	<style type="text/css">
 	 	* {
 	  box-sizing: border-box;
@@ -107,28 +103,27 @@
 	}
  	</style>
  </head>
- <body style="padding: 0px;margin:0px;background: url(images/proj3.jpg) no-repeat ;">
- 	<div  class="navbar navbar-expand-sm justify-content-center" style="background-color:   #18a095  ">
- 	<header>
-	<ul id="ul" class="navbar-nav">
-	  <li id="li" class="nav-item"><a href="index.html">Home</a></li>
-	  <li id="li" class="nav-item"><a href="resum.html">Resume</a></li>
-	  <li id="li" class="nav-item"><a href="projects.html">Projects</a></li>
-	  <li id="li" class="nav-item"><a href="contact.html">Contact</a></li>
-	</ul> 
+ <body style="padding: 0px;margin:0px;background: url(images/proj3.jpg) no-repeat ; ">
+ 	<header class="bg-blue-500 justify-center sm:flex sm:justify-center sm:items-center sm:px-40 sm:py-6">
+    
+	    <nav class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+	      <a href="index.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black xl:px-40 sm:mt-0 sm:px-10 sm:ml-2 ">Home</a>
+	      <a href="resum.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Resume</a>
+	      <a href="projects.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Projects</a>
+	      <a href="contact.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Contact</a>
+	    </nav>
 	</header>
-	</div>
-	 <div style="width: 100%;padding: 80px;">
-	 	<div class="box">
-	 		<div><p style="font-size: 40px;margin-top: 0px;">CONTACT</p>
-	 		<p>Ask Me anything!!<br>Looking forward to answering your email</p>
+	 <div style="width: 100%;padding: 80px;" class="lg:flex text-center">
+	 	<div class="block xl:w-1/2  xl:p-20 ">
+	 		<div class="px-4 py-2 text-center"><p style="font-size: 40px;margin-top: 0px;">CONTACT</p>
+	 		<p class="px-1">Ask Me anything!!<br>Looking forward to answering your email</p>
 	 		</div>
-	 		<div style="margin-bottom: 0px;"><img src="images/fb.png">
-	 		<img src="images/twit.png"></div>
+	 		<div style="margin-bottom: 0px;" class=" inline-block "><img src="images/fb.png" class="inline-block">
+	 		<img src="images/twit.png" class="inline-block"></div>
 	 	</div>
 	  
-	 	<div class="box">
-	 		<form>
+	 	<div class="block xl:w-1/2 xl:p-20 ">
+	 		<form class="px-4 py-2 text-center">
 	 			<input type="text" name="name" placeholder ="Name"/>
 	 			<input type="text" name="Email" placeholder ="Email"/>
 	 			<input type="text" name="sub" placeholder ="Subject"/>
@@ -139,26 +134,28 @@
 	 	</div>
 	 </div>
  	<!--Footer Tag-->
-	<div class="foot1">
-	<div class="foot2">
-		<div>Mail Me @</div>
-		<div>
-		<img src="images/mail1.png">
- 		<a href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
- 	</div>
- 	<div class="foot2" >
- 		<div style=""><b>Call</b></div>
- 		<img src="images/call.png" style="display: inline-block;">
- 		<div style="display: inline-block;">+91-9643421887</div>
- 	</div >
- 	<div class="foot2">
- 		<div><a href=""><b>Find me on social media.</b></a><br></div>
- 		<div>
- 		<a href=""><img src="images/fb.png" height="25" /></a>
- 		<a href=""><img src="images/insta.png"  height="25" /></a>
- 		<a href=""><img src="images/twit.png" height="25" /></a>
- 		</div>
- 	</div>
- </div>
+ 	<footer class="w-full text-center border-t border-grey p-6 pin-b " style="background-color: #18a095;">
+		<div class="md:flex ">
+			<div class="md:w-1/3 object-center mb-5 block">
+				<div>Mail Me @</div>
+				<div>
+				<img src="images/mail1.png" class="inline-block">
+		 		<a class="inline-block" href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
+		 	</div>
+		 	<div class="md:w-1/3 mb-5 block" >
+		 		<div style=""><b>Call</b></div>
+		 		<img src="images/call.png" style="display: inline-block;">
+		 		<div style="display: inline-block;">+91-9643421887</div>
+		 	</div >
+		 	<div class="md:w-1/3 block">
+		 		<div><a href=""><b>Find me on social media.</b></a><br></div>
+		 		<div>
+		 		<a class="inline-block" href=""><img  src="images/fb.png" height="25" /></a>
+		 		<!--<a href=""><img src="images/insta.png"  height="2" /></a>-->
+		 		<a class="inline-block" href=""><img src="images/twit.png" height="25" /></a>
+		 		</div>
+		 	</div>
+		</div>
+ 	</footer>
  </body>
  </html>

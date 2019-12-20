@@ -27,11 +27,23 @@
 	#hero-text {
 	  text-align: center;
 	  position: absolute;
+	  top: 48%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color:   #196f3d  ;
+	  font-size: 190px;
+	}
+	@media(min-width: 1000px)
+	{
+		#hero-text {
+	  text-align: center;
+	  position: absolute;
 	  top: 85%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  color:   #196f3d  ;
 	  font-size: 190px;
+	}
 	}
 	.box {
 	  float: left;
@@ -85,19 +97,28 @@
 		color: white;
 		  text-decoration: none;
 	}
-
+	.mrg{
+		margin-left: 150px;
+	}
+	}
+	@media all and (min-width: 600px) and (max-width: 1000px){
+		.mrg{
+		margin-left: 280px;
+	}
+	}
+	@media (min-width: 1000px){
+		.mrg{
+		margin-left: 180px;
+	}
+	}
 	.border{
 		border-style: solid;
 		border-color: white;
 		border-radius: 15px;
-		padding: 25px;
 		margin-top:30px;
-		width: 20%;
-		margin-left: 180px;
-		display: inline-block;
+		
 		background-color:  #2e4053 ;
 		color: white;
-		font-size: 25px;
 		text-align: center;
 		font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	}
@@ -121,15 +142,15 @@
  </head>
  <body style="padding: 0px;margin:0px;">
 
-       <header class="bg-blue-500 sm:flex sm:justify-around sm:items-center sm:px-40 sm:py-6">
+    <header class="bg-blue-500 justify-center sm:flex sm:justify-center sm:items-center sm:px-40 sm:py-6">
     
-    <nav class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-      <a href="index.html" class="mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:px-40 sm:mt-0 sm:ml-2">Home</a>
-      <a href="resum.html" class="mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:px-40 sm:mt-0 sm:ml-2">Resume</a>
-      <a href="projects.html" class="mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:px-40 sm:mt-0 sm:ml-2">Projects</a>
-      <a href="contact.html" class="mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:px-40 sm:mt-0 sm:ml-2">Contact</a>
-    </nav>
-</header>
+	    <nav class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+	      <a href="index.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black xl:px-40 sm:mt-0 sm:px-10 sm:ml-2 ">Home</a>
+	      <a href="resum.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Resume</a>
+	      <a href="projects.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Projects</a>
+	      <a href="contact.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Contact</a>
+	    </nav>
+	</header>
 
  
  	<!--<div  class="navbar navbar-expand-sm justify-content-center" style="background-color:   #18a095  ">
@@ -144,41 +165,43 @@
 	</div>-->
   	<div class=""><img src="images/b4.jpg" class="object-cover h-50 w-full">
   		<div class="w3-container w3-tangerine" id="hero-text">
-  			<p class="text-3xl sm:text-6xl text-teal-900"><b>Krishna Parasrampuria</b></p>
-  			<p class="text-3xl sm:text-6xl text-teal-900"><b>I'm a Programmer</b></p>
+  			<p class="text-3xl sm:text-4xl lg:text-6xl text-teal-900 top-10"><b>Krishna Parasrampuria</b></p>
+  			<p class="text-3xl sm:text-4xl lg:text-6xl text-teal-900"><b>I'm a Programmer</b></p>
   		</div>
   	</div>
- <div class="bg-auto" style="background-image: url(images/back3.jpg);" >
- 	<div style="padding: 50px;"><img src="images/mypic.jpg" class="center object-fill"></div>
- 	<div style="text-align: center;"><b>Krishna Parasrasrampuria</b></div>
- 	<div style="width: 80%;margin-top: 70px;margin-left: 180px;">
- 		<!--<a href=""><div class="border">ABOUT ME</div></a>-->
- 		<a href="resum.html"><div class="border">RESUME</div></a>
- 		<a href="projects.html"><div class="border">PROJECTS</div></a>
- 		<a href="contact.html"><div class="border">CONTACT</div></a>
-	</div>
-<div class="foot1">
-	<div class="foot2">
-		<div>Mail Me @</div>
-		<div>
-		<img src="images/mail1.png">
- 		<a href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
+	<div class="bg-auto" style="background-image: url(images/back3.jpg);" class="mb-20" >
+		<div style="padding: 50px;"><img src="images/mypic.jpg" class="center object-fill"></div>
+		<div style="text-align: center;"><b>Krishna Parasrasrampuria</b></div>
+		<div class="w-4/5 mt-10 mrg">
+			<!--<a href=""><div class="border">ABOUT ME</div></a>-->
+			<a href="resum.html"><div class="border w-1/5 p-5 xl:p-10 lg:inline-block ml-12 xl:ml-40 text-sm lg:text-xl">RESUME</div></a>
+			<a href="projects.html"><div class="border w-1/5 p-5 xl:p-10 lg:inline-block ml-12 xl:ml-40 text-sm lg:text-xl">PROJECTS</div></a>
+			<a href="contact.html"><div class="border w-1/5 p-5 xl:p-10 lg:inline-block ml-12 xl:ml-40 text-sm lg:text-xl">CONTACT</div></a>
+		</div>
+	
+ 	<footer class="w-full text-center border-t border-grey p-6 pin-b mt-20" style="background-color: #18a095;">
+		<div class="md:flex ">
+			<div class="md:w-1/3 object-center mb-5 block">
+				<div>Mail Me @</div>
+				<div>
+				<img src="images/mail1.png" class="inline-block">
+		 		<a class="inline-block" href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
+		 	</div>
+		 	<div class="md:w-1/3 mb-5 block" >
+		 		<div style=""><b>Call</b></div>
+		 		<img src="images/call.png" style="display: inline-block;">
+		 		<div style="display: inline-block;">+91-9643421887</div>
+		 	</div >
+		 	<div class="md:w-1/3 block">
+		 		<div><a href=""><b>Find me on social media.</b></a><br></div>
+		 		<div>
+		 		<a class="inline-block" href=""><img  src="images/fb.png" height="25" /></a>
+		 		<!--<a href=""><img src="images/insta.png"  height="2" /></a>-->
+		 		<a class="inline-block" href=""><img src="images/twit.png" height="25" /></a>
+		 		</div>
+		 	</div>
+		</div>
+ 	</footer>
  	</div>
- 	<div class="foot2" >
- 		<div style=""><b>Call</b></div>
- 		<img src="images/call.png" style="display: inline-block;">
- 		<div style="display: inline-block;">+91-9643421887</div>
- 	</div >
- 	<div class="foot2">
- 		<div><a href=""><b>Find me on social media.</b></a></div>
- 	 	<div>
- 		<a href=""><img src="images/fb.png" height="25" /></a>
- 		<a href=""><img src="images/insta.png"  height="20" /></a>
- 		<a href=""><img src="images/twit.png" height="25" /></a>
- 		</div>
-
- 	</div>
- </div>
- </div>
  </body>
  </html>

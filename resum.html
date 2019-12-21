@@ -7,10 +7,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+
 <!--bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -60,71 +63,71 @@ a{
 </head>
 <body class="w3-light-grey">
 <!--Header-->
-  <div  class="navbar navbar-expand-sm justify-content-center" style="background-color:   #18a095  ">
-  <header>
-  <ul id="ul" class="navbar-nav">
-    <li id="li" class="nav-item"><a href="index.html">Home</a></li>
-    <li id="li" class="nav-item"><a href="resume.html">Resume</a></li>
-    <li id="li" class="nav-item"><a href="projects.html">Projects</a></li>
-    <li id="li" class="nav-item"><a href="contact.html">Contact</a></li>
-  </ul> 
+<header class="bg-blue-500 justify-center sm:flex sm:justify-center sm:items-center sm:px-40 sm:py-6">
+    
+      <div class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+        <a href="index.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black xl:px-40 sm:mt-0 sm:px-10 sm:ml-2 ">Home</a>
+        <a href="resum.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Resume</a>
+        <a href="projects.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Projects</a>
+        <a href="contact.html" class="text-center mt-1 block px-2 py-1 text-white font-semibold hover:text-black sm:block sm:px-10 xl:px-40 sm:mt-0 sm:ml-2">Contact</a>
+      </div>
   </header>
-  </div>
+
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+  <div class="block sm:flex">
     <!-- Left Column -->
     <div class="w3-third">
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="images/mypic.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
+          <div class="w3-display-bottomleft w3-container w3-text-black text-3xl">
             <h2>Krishna Kumar Parasrampuria</h2>
           </div>
         </div><br>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Programmer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Jaipur, India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>krishna.agarwal961@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>9643421887</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>Programmer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>Jaipur, India</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>krishna.agarwal961@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal pb-5"></i>9643421887</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Programming-C/C++/Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal pt-5 pb-6"></i>Skills</b></p>
+          <p class="pb-4">Programming-C/C++/Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small ">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
           </div>
-          <p>Networking Fundamentals</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
+          <p class="pb-4">Networking Fundamentals</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small ">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
               <div class="w3-center w3-text-white">80%</div>
             </div>
           </div>
-          <p>Web Development-HTML/CSS/PHP</p>
+          <p class="pb-4">Web Development-HTML/CSS/PHP</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
           </div>
-          <p>Microsoft Office</p>
+          <p class="pb-4">Microsoft Office</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
           </div>
-          <p>Security and Pen-Testing</p>
+          <p class="pb-4">Security and Pen-Testing</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
           </div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal pb-5"></i>Languages</b></p>
+          <p class="pb-4">English</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
           </div>
-          <p>Hindi</p>
+          <p class="pb-4">Hindi</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
@@ -136,69 +139,69 @@ a{
     </div>
 
     <!-- Right Column -->
-    <div class="w3-twothird">
+    <div class="w3-twothird sm:ml-5 mb-5">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Intern at Forsk Technologies.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h5 class="w3-opacity pb-2"><b>Intern at Forsk Technologies.</b></h5>
+          <h6 class="w3-text-teal pb-2"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
           <p>Worked as student intern at Forsk Techonologies in Python.</p>
         </div><br>
         
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+      <div class="w3-container w3-card w3-white ">
+        <h2 class="w3-text-grey w3-padding-16 text-3xl"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Poornima University</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>07/2016-Present</h6>
-          <p>Bechlor Degree</p>
+          <h5 class="w3-opacity pb-1"><b>Poornima University</b></h5>
+          <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>07/2016-Present</h6>
+          <p class="pb-2">Bechlor Degree</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Vidya Mandir Public School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
-          <p>Senior Secondary-CBSE</p>
+          <h5 class="w3-opacity pt-2 pb-1"><b>Vidya Mandir Public School</b></h5>
+          <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
+          <p class="pb-2">Senior Secondary-CBSE</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Dundlod Vidyapeeth</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
-          <p>Secondary Education-CBSE</p><br>
+          <h5 class="w3-opacity pt-2 pb-1"><b>Dundlod Vidyapeeth</b></h5>
+          <h6 class="w3-text-teal pb-1"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
+          <p class="pb-2">Secondary Education-CBSE</p><br>
         </div>
       </div>
 
     <!-- End Right Column -->
     </div>
-    
+  </div>
   <!-- End Grid -->
   </div>
   
   <!-- End Page Container -->
 </div>
-<div class="foot1">
-  <div class="foot2">
-    <div>Mail Me @</div>
-    <div>
-    <img src="images/mail1.png">
-    <a href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
-  </div>
-  <div class="foot2" >
-    <div style=""><b>Call</b></div>
-    <img src="images/call.png" style="display: inline-block;">
-    <div style="display: inline-block;">+91-9643421887</div>
-  </div >
-  <div class="foot2">
-    <div><a href=""><b>Find me on social media.</b></a></div>
-    <div>
-    <a href=""><img src="images/fb.png" height="25" /></a>
-    <a href=""><img src="images/insta.png"  height="25" /></a>
-    <a href=""><img src="images/twit.png" height="25" /></a>
+<footer class="w-full text-center border-t border-grey p-6 pin-b " style="background-color: #18a095;">
+    <div class="md:flex ">
+      <div class="md:w-1/3 object-center mb-5 block">
+        <div>Mail Me @</div>
+        <div>
+        <img src="images/mail1.png" class="inline-block">
+        <a class="inline-block" href="mailto:krishna.agarwal961@gmail.com" data-type="mail">krishna.agarwal961@gmail.com</a></div>
+      </div>
+      <div class="md:w-1/3 mb-5 block" >
+        <div style=""><b>Call</b></div>
+        <img src="images/call.png" style="display: inline-block;">
+        <div style="display: inline-block;">+91-9643421887</div>
+      </div >
+      <div class="md:w-1/3 block">
+        <div><a href=""><b>Find me on social media.</b></a><br></div>
+        <div>
+        <a class="inline-block" href=""><img  src="images/fb.png" height="25" /></a>
+        <!--<a href=""><img src="images/insta.png"  height="2" /></a>-->
+        <a class="inline-block" href=""><img src="images/twit.png" height="25" /></a>
+        </div>
+      </div>
     </div>
-
-  </div>
- </div>
-
+  </footer>
 </body>
 </html>
